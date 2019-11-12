@@ -4,6 +4,8 @@
 
 echo "enter the domain name"
 read dm 
-nslookup $dm
+ip=$(nslookup $dm)
+echo "$ip"
+nslookup $dm > ip.txt #saving the output to a file
 
-        
+ head -6 ip.txt #to get the ip address
