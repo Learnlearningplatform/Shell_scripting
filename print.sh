@@ -1,2 +1,5 @@
 #!/bin/bash
-echo "hello world"
+# Author : SBJIT
+echo "what is your name"
+read person
+echo "hello $person"
